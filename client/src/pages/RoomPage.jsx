@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { io } from 'socket.io-client';
 
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001';
+const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'https://privatechat-production-fe8f.up.railway.app';
 
 // ── Avatar palette — vivid gradient pairs ─────────────────────────────────────
 const AVATAR_GRADIENTS = [

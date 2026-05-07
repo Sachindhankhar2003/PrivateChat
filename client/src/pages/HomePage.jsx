@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3001';
+const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'https://privatechat-production-fe8f.up.railway.app';
 
 // ── Confetti burst ────────────────────────────────────────────────────────────
 const CONFETTI_COLORS = ['#a78bfa','#f472b6','#38bdf8','#34d399','#fbbf24','#fb923c','#e879f9'];
@@ -75,7 +75,7 @@ export default function HomePage() {
       setCreatedLink({ roomId, link });
       spawnConfetti();
     } catch {
-      setError('Could not reach the server. Make sure it\'s running on port 3001.');
+      setError(`Could not reach the server at ${SERVER_URL}. Check your connection.`);
     } finally {
       setLoading(false);
     }
