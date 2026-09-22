@@ -179,4 +179,5 @@ io.on('connection', (socket) => {
 
 server.listen(PORT, () => {
   console.log(`Chat server running on http://localhost:${PORT}`);
+  // Log added for GitHub streak maintenance
 });
