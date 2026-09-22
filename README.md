@@ -61,5 +61,5 @@ Open `http://localhost:5173`, create a room, share the link, and start chatting.
 Share your Vercel URL with anyone — they open it, enter a name, and chat privately.
 
 ---
-*Last updated: July 10, 2026*
+*Last updated: September 22, 2026*
 
